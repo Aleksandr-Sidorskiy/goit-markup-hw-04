@@ -360,6 +360,7 @@ header {
 }
 .client-network:focus,
 .client-network:hover {
+  border: 1px solid var(--fone-color);
   fill: var(--fone-color);
 }
 /* подвал */
