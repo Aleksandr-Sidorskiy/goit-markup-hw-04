@@ -326,14 +326,15 @@ header {
 .social-item {
   fill: #afb1b8;
 }
-.social-item:focus,
-.social-item:hover {
+.social-network:focus,
+.social-network:hover {
   fill: var(--fone-color);
 }
 .social-item:not(:last-child) {
   margin-right: 22px;
 }
 .social-network {
+  fill: #afb1b8;
   width: 44px;
   height: 44px;
 }
@@ -383,12 +384,13 @@ header {
 .footer {
   margin: 0px auto;
   display: flex;
-  flex-direction: column;
-
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: #2f303a;
+}
+.footer-addres {
+  justify-content: flex-start;
 }
 .addres {
   margin-top: 20px;
@@ -411,7 +413,10 @@ header {
 }
 .join {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-left: 70px;
+  flex-direction: column;
 }
 .join-heading {
   font-weight: bold;
@@ -422,6 +427,7 @@ header {
   color: #ffffff;
 }
 .join-social-link {
+  display: flex;
   margin-top: 20px;
 }
 .join-social-network {
