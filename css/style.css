@@ -74,7 +74,6 @@ header {
 .header {
   background-color: #ffffff;
 
-  height: 80px;
   display: flex;
   align-items: center;
 }
@@ -110,8 +109,8 @@ header {
   margin-right: 50px;
 }
 
-.nav-link .nav-item {
-  display: block;
+.nav-item {
+  display: flex;
 
   color: var(--text-secondary);
   font-weight: 500;
@@ -123,6 +122,24 @@ header {
 .nav-link .nav-item :focus {
   color: var(--fone-color);
 }
+.nav-network {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+.nav-network::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: " ";
+  display: block;
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--fone-color);
+}
 /* контакты */
 .auth-nav {
   display: flex;
@@ -133,7 +150,12 @@ header {
   display: block;
   margin-right: 50px;
 }
+
+.nav-item {
+  align-items: center;
+}
 .header-kontacts {
+  align-items: center;
   color: var(--text-primery);
   font-weight: 500;
   font-style: normal;
@@ -168,10 +190,9 @@ header {
   line-height: 1.36;
   color: #ffffff;
 }
-.primery-section {
+.hero {
   height: 600px;
   padding-top: 200px;
-
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -179,6 +200,10 @@ header {
     ),
     url(../images/background-img.png);
   background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.primery-section {
 }
 .button-order-servise {
   display: block;
